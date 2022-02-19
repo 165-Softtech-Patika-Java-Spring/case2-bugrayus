@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 public class GetAddressResponseModel {
-    private Long id;
     int doorNumber;
     int apartmentNumber;
     String name;
@@ -14,4 +13,5 @@ public class GetAddressResponseModel {
     District district;
     Quarter quarter;
     Street street;
+    private Long id;
 }

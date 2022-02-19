@@ -16,9 +16,6 @@ import java.util.Objects;
 @ToString
 @RequiredArgsConstructor
 public class Address {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
     int doorNumber;
     int apartmentNumber;
     String name;
@@ -37,6 +34,9 @@ public class Address {
     @JsonIgnore
     @OneToOne
     Street street;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Override
     public boolean equals(Object o) {

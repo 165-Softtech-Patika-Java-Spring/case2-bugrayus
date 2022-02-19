@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class UpdateStreetRequestModel {
-    private Long id;
     String name;
+    private Long id;
 }
